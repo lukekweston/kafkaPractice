@@ -14,6 +14,8 @@ public class KafkaApplication {
         );
     }
 
+
+    //On init create a 100 hello kafka messages subscribed to the "lukescode" topic
     @Bean
     CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate){
         return args -> {

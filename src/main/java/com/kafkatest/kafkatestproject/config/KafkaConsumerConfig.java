@@ -16,6 +16,14 @@ import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/*
+A Kafka consumer is a component within a Kafka-based application that subscribes to one or
+ more topics to read and process messages published by Kafka producers. It is responsible
+ for receiving messages from Kafka topics, processing them as needed by the application,
+ and allowing for scalable and fault-tolerant data processing by distributing work among
+ consumers within consumer groups.
+ */
 @Configuration
 public class KafkaConsumerConfig {
 

@@ -12,13 +12,16 @@ public class MessageController {
 
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    public MessageController(KafkaTemplate<String, String> kafkaTemplate){
+    public MessageController(KafkaTemplate<String, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
 
+
+    //takes a message request body and sends it to as a kafka template subscribing to the
+    //topic "lukescode"
     @PostMapping
-    public void publish(@RequestBody MessageRequest request){
+    public void publish(@RequestBody MessageRequest request) {
         kafkaTemplate.send("lukescode", request.message());
     }
 }

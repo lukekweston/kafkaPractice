@@ -12,6 +12,15 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/*
+A Kafka producer is a component within a Kafka-based application that
+sends or publishes messages to Kafka topics. It is responsible for
+ creating messages, typically containing data or events, and sending
+ them to the specified Kafka topics, allowing other components, such
+ as Kafka consumers, to read and process these messages in a scalable,
+ distributed, and fault-tolerant manner.
+ */
 @Configuration
 public class KafkaProducerConfig {
 
