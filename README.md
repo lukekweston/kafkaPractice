@@ -13,8 +13,8 @@ Download and extract kafka, browse to that directory then run the following comm
 
 (I had to uncomment and set advertised.listeners=PLAINTEXT://<my ip>:9092 in server.properties in the config dir in kafaka to get it to run) 
 
-# Start the ZooKeeper service
+Start the ZooKeeper service
 $ bin/zookeeper-server-start.sh config/zookeeper.properties
 
-# Start the Kafka broker service
+Start the Kafka broker service
 $ bin/kafka-server-start.sh config/server.properties
